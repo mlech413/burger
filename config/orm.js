@@ -65,8 +65,8 @@ var orm = {
       cb(result);
     });
   },
-  updateOne: function(condition, cb) {
-    var queryString = "UPDATE burgers";
+  updateOne: function(table, condition, cb) {
+    var queryString = "UPDATE " + table;
     queryString += " SET devoured = true";
     queryString += " WHERE " + condition;
     console.log(queryString);

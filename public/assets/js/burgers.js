@@ -5,14 +5,18 @@ $(function() {
   
       // Send the PUT request.
       $.ajax("/api/burger/" + id, {
-        type: "PUT"
-        // type: "PUT",
-        // data: newSleepState
+        // type: "PUT"
+        type: "PUT",
+        data: true
       }).then(
         function() {
           console.log("updated burger #" + id);
           // Reload the page to get the updated list
-          location.reload();
+          $(".gif-display").append("<img src='./assets/images/pulp_fiction_burger.gif'>")
+          setTimeout(function() {
+            location.reload();
+          }, 3000);
+          // location.reload();
         }
       );
     });
@@ -25,7 +29,6 @@ $(function() {
         burger_name: $("#new-burger").val().trim(),
         devoured: false
       };
-      console.log("newBurger=" + JSON.stringify(newBurger))
   
       // Send the POST request.
       $.ajax("/api/burger", {
