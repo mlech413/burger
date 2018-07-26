@@ -6,4 +6,4 @@
 
 ## Getting Started
 
-#### The application can be accessed at https://. Have fun and enjoy your burgers!!!
+#### The application can be accessed at https://dry-temple-31498.herokuapp.com/. Have fun and enjoy your burgers!!!
