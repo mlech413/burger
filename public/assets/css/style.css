@@ -1,5 +1,7 @@
 body {
     background: black;
     color: white;
-    background-image: url(../images/background-hamburguer-4.jpg)
+    background-image: url(../images/burger-4.jpg);
+    font-family: 'Tangerine', serif;
+    font-size: 175%;
 }
